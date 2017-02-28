@@ -1,12 +1,12 @@
 $("document").ready(function () {
 
-	$('appointment-form').children().hide();
+	$('#appointment-form').hide();
 
 	$("#details-btn").click(function(event) {
 		$("#app-form-options").children().removeClass('active');
 		$(this).addClass('active');
 
-		$('#details-page').show();
+		$('#details-page').fadeIn();
 		$('#schedule-page').hide();
 
 
@@ -17,31 +17,55 @@ $("document").ready(function () {
 		$(this).addClass('active');
 
 		$('#details-page').hide();
-		$('#schedule-page').show();
+		$('#schedule-page').fadeIn();
 
 	});
 
+	// Open the spongebob appointment
 	$('#spongebob-app').click(function(event) {
-		$('#app-selector').children('li').removeClass('active');
+		$('#app-selector').children().removeClass('active');
 		$(this).parent('li').addClass('active');
+
+		$('#placeholder-message').hide(); // Remove placeholder message
+		$('#appointment-form').fadeIn(); // Show form
 
 		$("#app-form-options").children().removeClass('active');
 		$('#details-btn').addClass('active');
 
-		$('#details-page').show();
 		$('#schedule-page').hide();
+		$('#details-page').fadeIn();
+
+		// Populate demographic info
+		$('#app-person-name').text('Squarepants, Spongebob');
+		$('#input-last-name').val('Squarepants');
+		$('#input-first-name').val('Spongebob');
+
+		// Set profile pic
+		$('#profile-pic img').attr('src', './img/spongebob.png')
 
 	});
 
+	// Open the jim appointment
 	$('#jim-app').click(function(event) {
 		$('#app-selector').children('li').removeClass('active');
-		$(this).parent('li').addClass('active');
+		$(this).parent().addClass('active');
+
+		$('#placeholder-message').hide(); // Remove placeholder message
+		$('#appointment-form').fadeIn(); // Show form
 
 		$("#app-form-options").children().removeClass('active');
 		$('#details-btn').addClass('active');
 
-		$('#details-page').show();
 		$('#schedule-page').hide();
+		$('#details-page').fadeIn();
+
+		// Populate demographic info
+		$('#app-person-name').text('Bob, Jim');
+		$('#input-last-name').val('Bob');
+		$('#input-first-name').val('Jim');
+
+		// Set profile pic
+		$('#profile-pic img').attr('src', './img/blank-profile-pic.png')
 
 	});
 
