@@ -1,0 +1,102 @@
+body {
+    background-color: #FFFFFF;
+}
+
+h1,
+h2,
+h3,
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+li { cursor: pointer; }
+
+
+.navdiv {
+}
+
+.app-btn h1 {
+    font-size: 12px;
+}
+
+.app-btn-name {
+	
+	text-align: left;
+}
+
+.app-btn-time {
+    color: #8E8E8E;
+    font-size: 12px;
+    float: right;
+}
+
+.app-container {
+	margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.app-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 280px;
+    padding: 20px;
+    border-right: thin solid #DCDCDC;
+}
+
+.app-searchbar {
+	margin-bottom: 20px;
+}
+
+#app-sort {
+	text-align: right;
+}
+
+#app-sort:hover {
+	color: #A2A2A2;
+}
+
+#app-sort:visited {
+	color: #18BD80;
+}
+
+#app-sort:active {
+	color: #A2A2A2;
+}
+
+.app-btn-info {
+    color: #8E8E8E;
+    text-align: left;
+    font-size: 10px;
+}
+
+#appointment-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 60%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.app-detail-input {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.active {
+	background-color: #F0F0F0;
+}
+
+#details {
+    display: flex;
+    justify-content: left;
+}
+
+.details-col {
+    padding: 30px;
+}
+
+
