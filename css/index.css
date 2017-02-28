@@ -9,19 +9,24 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-li { cursor: pointer; }
-
-
-.navdiv {
+li {
+    cursor: pointer;
 }
+
+.required:after {
+    content: " *";
+    color: #FD8897;
+
+}
+
+.navdiv {}
 
 .app-btn h1 {
     font-size: 12px;
 }
 
 .app-btn-name {
-	
-	text-align: left;
+    text-align: left;
 }
 
 .app-btn-time {
@@ -31,7 +36,7 @@ li { cursor: pointer; }
 }
 
 .app-container {
-	margin-top: 50px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -40,36 +45,42 @@ li { cursor: pointer; }
 .app-sidebar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 280px;
     padding: 20px;
     border-right: thin solid #DCDCDC;
 }
 
 .app-searchbar {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #app-sort {
-	text-align: right;
+    text-align: right;
 }
 
 #app-sort:hover {
-	color: #A2A2A2;
+    color: #A2A2A2;
 }
 
 #app-sort:visited {
-	color: #18BD80;
+    color: #18BD80;
 }
 
 #app-sort:active {
-	color: #A2A2A2;
+    color: #A2A2A2;
 }
 
 .app-btn-info {
     color: #8E8E8E;
     text-align: left;
     font-size: 10px;
+}
+
+#placeholder-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 150px;
 }
 
 #appointment-form {
@@ -87,16 +98,67 @@ li { cursor: pointer; }
 }
 
 .active {
-	background-color: #F0F0F0;
+    background-color: #F0F0F0;
 }
 
 #details {
     display: flex;
     justify-content: left;
+    flex-direction: row;
+}
+
+#details-forms {
+	display: flex;
+    justify-content: left;
+    flex-direction: column;
 }
 
 .details-col {
     padding: 30px;
 }
 
+#dem-section {
+	border-bottom: thin solid #DCDCDC;
+	display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+}
 
+#contact-info-section {
+	border-bottom: thin solid #DCDCDC;
+	display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+}
+
+#dob {
+	display: flex;
+	flex-direction: row;
+}
+
+
+#yr {
+	width: 75px;
+	margin-right: 5px;
+}
+
+#month {
+	width: 65px;
+	margin-right: 5px;
+}
+
+#day {
+	width: 60px;
+}
+
+#note-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 200px;
+}
+
+#profile-pic {
+	width: 100px;
+	margin-bottom: 30px;
+}
