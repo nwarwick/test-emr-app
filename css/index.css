@@ -4,13 +4,25 @@ body {
 
 h1,
 h2,
-h3,
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #6F6F74;
+}
 p {
     font-family: 'Roboto', sans-serif;
+    color: #818188;
 }
 
 li {
     cursor: pointer;
+}
+
+label {
+	color: #818188;
+}
+
+hr {
+    width: 100%;
 }
 
 .required:after {
@@ -19,7 +31,13 @@ li {
 
 }
 
-.navdiv {}
+#app-navbar{
+
+}
+
+.date {
+    margin-bottom: 10px;
+}
 
 .app-btn h1 {
     font-size: 12px;
@@ -27,6 +45,7 @@ li {
 
 .app-btn-name {
     text-align: left;
+    color: #18bc9c;
 }
 
 .app-btn-time {
@@ -55,7 +74,8 @@ li {
 }
 
 #app-sort {
-    text-align: right;
+    margin-top: 15px;
+    
 }
 
 #app-sort:hover {
@@ -63,7 +83,7 @@ li {
 }
 
 #app-sort:visited {
-    color: #18BD80;
+    color: #18bc9c;
 }
 
 #app-sort:active {
@@ -74,6 +94,10 @@ li {
     color: #8E8E8E;
     text-align: left;
     font-size: 10px;
+}
+
+#app-navbar {
+	height: 20px;
 }
 
 #placeholder-message {
@@ -114,21 +138,28 @@ li {
 }
 
 .details-col {
-    padding: 30px;
+	margin-bottom: 30px;
+	width: 210px;
+}
+
+.col-form-label {
+	margin-top: 10px;
+}
+
+#spacer {
+	width: 80px;
 }
 
 #dem-section {
 	border-bottom: thin solid #DCDCDC;
 	display: flex;
     flex-direction: row;
-    margin-top: -20px;
 }
 
 #contact-info-section {
-	border-bottom: thin solid #DCDCDC;
 	display: flex;
     flex-direction: row;
-    margin-top: -20px;
+    margin-bottom: 100px;
 }
 
 #dob {
@@ -154,11 +185,39 @@ li {
 #note-section {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	margin-left: 200px;
+	align-items: left;
+	margin-left: 150px;
+	width: 300px;
+	min-width: 185px;
+
 }
 
 #profile-pic {
-	width: 100px;
 	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#add-note {
+	margin-bottom: 15px;
+}
+
+#add-contact {
+	border-top: thin solid #DCDCDC;
+}
+
+#add-contact-label {
+	margin-top: 15px;
+}
+
+#contact-add-icon {
+	float: right;
+}
+
+#add-prof-contact {
+	border-top: thin solid #DCDCDC;
+}
+
+.datepicker-orient-bottom {
+    margin-top: 50px;
 }
